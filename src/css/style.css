@@ -1,0 +1,29 @@
+* 
+{
+    padding: 0;
+    margin:0;
+}
+
+body
+{
+    height: 100vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.container 
+{
+    --grid-size: 32fr;
+
+    display: grid;
+    grid-template-columns: var(--grid-size);
+    grid-template-rows: var(--grid-size);
+
+    width: 30vw;
+    aspect-ratio: 1/1;
+    border: 5px solid #000;
+    
+    background-color: #ccc;
+    gap: .5vw;
+}
